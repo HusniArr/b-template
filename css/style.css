@@ -17,9 +17,17 @@
 }
 .sidebar .left ul li a{
     text-decoration: none;
+    color: black;
+}
+.sidebar .left ul li a:hover{
+    border-bottom: 1px solid blue;
 }
 .sidebar .right{
     width: 60%;
+}
+.sidebar .right .navbar{
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
 }
 .sidebar .right .main h1{
     font-weight: 600;
