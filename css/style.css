@@ -118,3 +118,42 @@
     border: 1px transparent;
 }
 
+/* card */
+
+.card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8x 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    gap:20px;
+    margin-bottom: 20px;
+}
+.card a{
+    text-decoration: none;
+    color: #000;
+}
+.card-item img{
+    width: 300px;
+    border: none;
+}
+.card-item h2{
+    font-weight: 500;
+    font-size: 28px;
+    text-align: left;
+}
+.card-item p{
+    font-size: 14px;
+    font-family: arial;
+}
+.card-item:hover{
+    box-shadow: 0 8px 16x 0 rgba(0,0,0,0.2)
+    ;
+    opacity: 0.8;
+}
+.card-item h2:hover{
+    text-decoration: underline blue;
+}
+.card-item p:hover{
+    text-decoration:underline blue;
+}
