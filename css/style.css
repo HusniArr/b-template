@@ -27,7 +27,7 @@
 }
 .sidebar .right .navbar{
     border-bottom: 1px solid gray;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .sidebar .right .main h1{
     font-weight: 600;
@@ -37,6 +37,8 @@
     font-size: 14px;
     text-align: justify;
 }
+
+/* footer */
 .sidebar .right .footer{
     display: flex;
     flex-direction: row;
@@ -45,18 +47,74 @@
 .sidebar .right .footer .social{
     grid-column: 1 / 2;
 }
-.sidebar .right .footer .copyright{
-    grid-column: 1 / 5;
-}
 .sidebar .right .footer .social span a{
     text-decoration: none;
     align-items: center;
+    color:#000;
+}
+.sidebar .right .footer .social span a:hover{
+    border-bottom:1px solid blue;
+}
+.sidebar .right .footer .copyright{
+    grid-column: 1 / 5;
 }
 
 .sidebar .right .footer .copyright{
     margin-left: 20px;
 }
+/* menubar */
+.menubar ul li{
+    padding: 10px;
+}
+/* dropdown menu */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
 
+.dropdown-content a{
+    color: #fff;
+    padding: 4px 6px;
+    text-decoration: none;
+    display: block;
+}
 
+.dropdown-content a:hover{
+    background-color: rgb(178, 183, 185);
+}
 
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* form pencarian */
+.navbar form input{
+    height: 30px;
+    width: 400px;
+    border: transparent;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: rgb(184, 188, 197);
+    color: #fff;
+}
+.navbar form input::placeholder{
+    color: #fff;
+}
+.navbar form input:-ms-input-placeholder{
+    color: #fff;
+}   
+.navbar form button{
+    height: 30px;
+    border-radius: 4px;
+    background-color: rgb(148, 159, 197);
+    font-size: 14px;
+    color:#fff;
+    border: 1px transparent;
+}
 
