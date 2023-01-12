@@ -11,6 +11,7 @@
 }
 .sidebar .left{
     width: 20%;
+    border-right: 1px solid #606163;
 }
 .sidebar .left ul{
     list-style: none;
@@ -23,6 +24,7 @@
     border-bottom: 1px solid blue;
 }
 .sidebar .right{
+    margin-left: 20px;
     width: 60%;
 }
 .sidebar .right .navbar{
