@@ -10,13 +10,15 @@
 </head>
 <body>
     <div class="app">
+        <!-- sidebar -->
         <div class="sidebar">
             <div class="left">
                 <div class="menubar">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li class="dropdown">Tutorial
+                        <li class="dropdown">Tutorial<button class="icon">&rsaquo;</button>
+                            <ul 
                             <ul class="dropdown-content">
                                 <li><a href="tutorial.html">PHP</a></li>
                                 <li><a href="tutorial.html">Node</a></li>
@@ -26,7 +28,13 @@
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="login.html">Login</a></li>
                     </ul>
-
+                    <hr class="garis-batas">
+                    <div class="sajak-motivasi">
+                        Motivasi:
+                        <p>Jangan pernah berhenti untuk terus belajar menjadi lebih baik lagi</p>
+                        Semboyan:
+                        <p>Jogo Diri, Jogo Ati</p>
+                    </div>
                 </div>
             </div>
             <div class="right">
@@ -37,22 +45,38 @@
                     </form>
                 </div>
                 <div class="main">
-                    <h1>About</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nam neque, corrupti minima animi voluptate, excepturi itaque dolore reprehenderit fugit soluta aliquam voluptatum laboriosam mollitia esse consequatur placeat, accusantium sequi sit ab modi tenetur cumque numquam? Dicta nostrum atque vel.</p>
-                </div>
-                <div class="footer">
-                    <div class="social">
-                        <span><a href="#">Facebook</a></span>
-                        <span><a href="#">Instagram</a></span>
-                        <span><a href="#">Youtube</a></span>
+                    <div class="row">
+                        <div class="col">
+                            <h1>About</h1>
+                            <p>Salam kenal dari husni selaku <strong>author</strong> situs ini. Semoga hari - hari anda diselimuti dengan penuh warna keindahan. Disini merangkum banyak materi pemrograman di mulai dari dasar hingga tingkat lanjutan. Apa yang kami bagikan semoga bisa menjadi ilmu yang bermanfaat dan bisa disalurkan kembali kepada mereka yang membutuhkan akan dunia pengkodean atau pemrogaman.</p>
+                        </div>
+                        <div class="col">
+                            <div class="category-post">
+                                <h2>Category</h2>
+                                <p><a href="#">PHP</a></p>
+                                <p><a href="#">Node</a></p>
+                                <p><a href="#">Python</a></p>
+                                <p><a href="#">Java</a></p>
+                            </div> 
+                        </div>
                     </div>
-                    <div class="copyright">
-                        <span>&copy;Copyright - 2023. All Rights Reserved</span>
-                    </div>
+                    
                 </div>
-
             </div>
         </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="social">
+                <span><a href="#">Facebook</a></span>
+                <span><a href="#">Instagram</a></span>
+                <span><a href="#">Youtube</a></span>
+            </div>
+            <div class="copyright">
+                <span>&copy;Copyright - 2023. All Rights Reserved</span>
+            </div>
+        </div>
+        
     </div>
 </body>
 </html>
