@@ -165,9 +165,10 @@ body{
     height: 300px;
     border: none;
 }
-.card-item h2{
-    font-weight: 500;
-    font-size: 28px;
+.card-item h4{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
     text-align: left;
 }
 .card-item p{
@@ -179,7 +180,7 @@ body{
     ;
     opacity: 0.8;
 }
-.card-item h2:hover{
+.card-item h4:hover{
     text-decoration: underline blue;
 }
 .card-item p:hover{
