@@ -11,29 +11,29 @@ body{
     margin: 20px;
     box-shadow: 0 4px 8px 4px rgba(0,0,0,0.2);
 }
-.sidebar{
+.main-column{
     width: 100%;
     display: flex;
     flex-direction: row;
     margin: 20px;
 }
-.sidebar .left{
+.main-column .left{
     width: 20%;
     border-right: 1px solid #606163;
 }
-.sidebar .left ul{
+.main-column .left ul{
     list-style: none;
 }
-.sidebar .left ul li a{
+.main-column .left ul li a{
     text-decoration: none;
     color: black;
 }
 
-.sidebar .right{
+.main-column .right{
     margin-left: 20px;
     width: 60%;
 }
-.sidebar .right .navbar{
+.main-column .right .navbar{
     margin: 20px;
     border-bottom: 1px solid gray;
     padding-bottom: 10px;
@@ -43,12 +43,12 @@ body{
     flex-direction: row;
 }
 
-.sidebar .right .main .row .col h1{
+.main-column .right .main .row .col h1{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 400;
     font-size: 24px;
 }
-.sidebar .right .main .row .col p{
+.main-column .right .main .row .col p{
     font-size: 14px;
     text-align: justify;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -222,4 +222,11 @@ body{
 }
 .category-post p a:hover{
     border-bottom: 1px solid blue;
+}
+
+/* detail artikel */
+.main .row .col .image-post{
+    width: 600px;
+    height: 300px;
+    border: 2px solid gray;
 }
