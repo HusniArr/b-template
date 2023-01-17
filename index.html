@@ -10,15 +10,34 @@
 </head>
 <body>
     <div class="app">
-        <!-- sidebar -->
-        <div class="main-column">
-            <div class="left">
-                <div class="menubar">
+
+        <div class="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo/shark-logo.jpg" alt="logo">
+                </a>
+            </div>
+            <div class="navbar">
+                <div class="toggle-bar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="search">
+                    <form action="#">
+                        <input type="text" placeholder="Search Type..." aria-placeholder="Search Type...">
+                        <button>Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="sidebar">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li class="dropdown">Tutorial<button class="icon">&rsaquo;</button>
-                            <ul 
                             <ul class="dropdown-content">
                                 <li><a href="tutorial.html">PHP</a></li>
                                 <li><a href="tutorial.html">Node</a></li>
@@ -28,97 +47,95 @@
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="login.html">Login</a></li>
                     </ul>
-                    <hr class="garis-batas">
-                    <div class="sajak-motivasi">
-                        Motivasi:
+                    <hr class="divider">
+                    <div class="motivasi">
+                        <h3>Motivasi:</h3> 
                         <p>Jangan pernah berhenti untuk terus belajar menjadi lebih baik lagi</p>
-                        Semboyan:
+                        <h3>Semboyan:</h3> 
                         <p>Jogo Diri, Jogo Ati</p>
                     </div>
                 </div>
+                 
             </div>
-            <div class="right">
-                <div class="navbar">
-                    <form action="#">
-                        <input type="text" placeholder="Search Type..." aria-placeholder="Search Type...">
-                        <button>Submit</button>
-                    </form>
-                </div>
-                <div class="main">
+            <div class="col-9">
+                <div class="content">
                     <div class="row">
-                        <div class="col">
-                            <h1>Hello Koders</h1>
+                        <div class="col-8">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item">Home</li>
+                                </ol>
+                            </nav>
+                            <h1>Home</h1>
                             <p>Salam kenal dari husni selaku <strong>author</strong> situs ini. Semoga hari - hari anda diselimuti dengan penuh warna keindahan. Disini merangkum banyak materi pemrograman di mulai dari dasar hingga tingkat lanjutan. Apa yang kami bagikan semoga bisa menjadi ilmu yang bermanfaat dan bisa disalurkan kembali kepada mereka yang membutuhkan akan dunia pengkodean atau pemrogaman.</p>
-                            <h1>Portfolio</h1>
-                            <div class="portfolio">
-                                <div class="item">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/C_Hello_World_Program.png" alt="">
-                                </div>
-                                <div class="item">
-                                        <img src="https://images.interestingengineering.com/images/FEBRUARY/programming_languages5.jpg" alt="">
-                                        
-                                </div>
-                                
-                            </div>
                             <h1>Latest Post</h1>
-                            <div class="card">
-                                <a href="detail.html">
-                                    <div class="card-item">
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/C_Hello_World_Program.png" alt="">
-                                        <h4>Hello World #PHP</h4>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                                    </div>
-        
-                                </a>
-                                <a href="detail.html">
-                                <div class="card-item">
-                                        <img src="https://images.interestingengineering.com/images/FEBRUARY/programming_languages5.jpg" alt="">
-                                        <h4>Hello World #NODE</h4>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="#">
+                                        <div class="card">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/C_Hello_World_Program.png" alt="">
+                                            <h4>Hello World #PHP</h4>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                        </div>
             
+                                    </a>           
+                                    
                                 </div>
-                                </a>
-                                <a href="detail.html">
-                                    <div class="card-item">
-                                            <img src="https://miro.medium.com/max/1024/1*KzqSk2ixY2KpWMuiw4U9Wg.png" alt="">
-                                            <h4>Hello World #PYTHON</h4>
-                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                
-                                                
-                                    </div>
-                                </a>
-                                <a href="detail.html">
-                                    <div class="card-item">
-                                            <img src="https://miro.medium.com/max/1024/1*KzqSk2ixY2KpWMuiw4U9Wg.png" alt="">
-                                            <h4>Hello World #Java</h4>
-                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                
-                                                
-                                    </div>
-                                </a>
+                                <div class="col-6">
+                                    <a href="#">
+                                        <div class="card">
+                                                <img src="https://images.interestingengineering.com/images/FEBRUARY/programming_languages5.jpg" alt="">
+                                                <h4>Hello World #NODE</h4>
+                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="#">
+                                        <div class="card">
+                                                <img src="https://miro.medium.com/max/1024/1*KzqSk2ixY2KpWMuiw4U9Wg.png" alt="">
+                                                <h4>Hello World #PYTHON</h4>
+                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    
+                                                    
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        <div class="card">
+                                                <img src="https://miro.medium.com/max/1024/1*KzqSk2ixY2KpWMuiw4U9Wg.png" alt="">
+                                                <h4>Hello World #Java</h4>
+                                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    
+                                                    
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-4">
                             <div class="category-post">
-                                <h1>Category</h1>
+                                <h2>Category</h2>
                                 <p><a href="#">PHP</a></p>
                                 <p><a href="#">Node</a></p>
-                                <p><a href="#">Pyton</a></p>
+                                <p><a href="#">Python</a></p>
                                 <p><a href="#">Java</a></p>
                             </div> 
                         </div>
+
                     </div>
-                    
                 </div>
             </div>
         </div>
-
-        <!-- footer -->
         <div class="footer">
             <div class="social">
-                <span><a href="#">Facebook</a></span>
-                <span><a href="#">Instagram</a></span>
-                <span><a href="#">Youtube</a></span>
+                <span><a href="https://facebook.com" target="_blank">Facebook</a></span>
+                <span><a href="https://instagram.com" target="_blank">Instagram</a></span>
+                <span><a href="https://youtube.com" target="_blank">Youtube</a></span>
             </div>
             <div class="copyright">
                 <span>&copy;Copyright - 2023. All Rights Reserved</span>
