@@ -340,7 +340,49 @@ nav .breadcrumb .breadcrumb-item.active{
 .toggle-bar span:nth-child(3){
     transform-origin: 0% 100%;
 }
+/* form label dan form control */
+.form-label{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.form-control{
+    width: 400px;
+    height: 40px;
+    border:2px solid #066abc;
+    border-radius:4px 4px 4px 4px;
+    font-size: 20px;
+}
 
+.btn-default{
+    margin-top:20px;
+    margin-bottom:20px;
+    width: 150px;
+    height: 40px;
+    font-size:18px;
+    font-weight: normal;
+    border:2px solid #fff;
+    border-radius: 4px 4px 4px 4px;
+    color: #fff;
+    background-color: #066abc;
+    align-items: center;
+    justify-content: center;
+}
+/* back-to-top */
+.back-to-top{
+    width: 38px;
+    height:32px;
+    position:absolute;
+    left: 1080px;
+    top:1600px;
+    align-items: center;
+    justify-content: center;
+    border:2px solid #066abc;
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgb(36, 231, 36);
+}
 /* For Desktop */
 .col-1 {width:8.33%;}
 .col-2{width:16.66%;}
@@ -383,6 +425,7 @@ nav .breadcrumb .breadcrumb-item.active{
         width: 120px;
     }
     .navbar .toggle-bar{
+        position:absolute;
         flex: 1;
         margin-top: 6px;
         margin-left: 260px;
@@ -424,6 +467,17 @@ nav .breadcrumb .breadcrumb-item.active{
         object-fit: cover;
         background-size:contain;
         background-repeat: no-repeat;
+    }
+    .back-to-top{
+        position:absolute;
+        left: 350px;
+        top:540px;
+    }
+    .form-label{
+        width: 100px;
+    }
+    .form-control{
+        width: 200px;
     }
 }
 
