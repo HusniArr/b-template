@@ -471,7 +471,7 @@ nav .breadcrumb .breadcrumb-item.active{
     .back-to-top{
         position:absolute;
         left: 350px;
-        top:540px;
+        /* top:540px; */
     }
     .form-label{
         width: 100px;
