@@ -87,11 +87,11 @@ body{
 }
 /* dropdown menu */
 .dropdown {
-    display: inline-block;
+    display: block;
     position: relative;
 }
 .dropdown .icon{
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 100;   
     border:none;
 }
@@ -141,6 +141,13 @@ body{
     font-size: 14px;
     color:#fff;
     border: transparent;
+}
+.navbar .search form input{
+    height: 30px;
+    width: 200px;
+}
+.navbar .search form button{
+    height: 30px;
 }
 /* footer */
 .footer{
@@ -277,26 +284,20 @@ nav .breadcrumb .breadcrumb-item.active{
 .row .col-12 .detail p{
     text-align: justify;
 }
-/* For Desktop */
-.col-1 {width:8.33%;}
-.col-2{width:16.66%;}
-.col-3{width:25%;}
-.col-4{width:33.33%;}
-.col-5{width:41.66%;}
-.col-6{width:50%;}
-.col-7{width: 58.33%;}
-.col-8{width: 66.66%;}
-.col-9{width: 75%;}
-.col-10{width: 83.33%;}
-.col-11{width: 91.66%;}
-.col-12{width: 100%;}
-.navbar .search form input{
-    height: 30px;
-    width: 200px;
+
+/* menu for mobile phone */
+.menu{
+    display:none;
 }
-.navbar .search form button{
-    height: 30px;
+.menu .dropdown .dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    margin-left: 60px;
 }
+
+
 
  /* toggle bar */
  .navbar .toggle-bar{
@@ -325,6 +326,20 @@ nav .breadcrumb .breadcrumb-item.active{
 .toggle-bar span:nth-child(3){
     transform-origin: 0% 100%;
 }
+
+/* For Desktop */
+.col-1 {width:8.33%;}
+.col-2{width:16.66%;}
+.col-3{width:25%;}
+.col-4{width:33.33%;}
+.col-5{width:41.66%;}
+.col-6{width:50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
 
 @media only screen and (max-width: 768px) {
     /* For mobile phone */
@@ -360,6 +375,32 @@ nav .breadcrumb .breadcrumb-item.active{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+    .menu{
+        margin-top:2px;
+       display: block;
+       position:relative;
+       border-bottom:4px solid #5f84e9;
+    }
+    .menu ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+    }
+    .menu ul li a{
+        color:#000;
+        text-decoration: none;
     }  
+    .menu ul li a:hover{
+        color: #fff;
+        background: rgb(178, 183, 185);
+        border-bottom: 1px solid blue;
+    }
+    .menu .dropdown:hover .dropdown-content{
+        display: block;
+    }
 }
 
