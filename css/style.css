@@ -8,12 +8,13 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    opacity: 0.85;  
+    opacity: 0.85;      
 }
 .app{
     margin: 20px;
     box-shadow: 0 4px 8px 4px rgba(0,0,0,0.2);
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Jolly Lodger';
+    font-size: 22px;
 }
 /* header */
 .header{
@@ -169,12 +170,13 @@ body{
     flex-direction: row;
     box-shadow: 0px 4px 4px 4px rgba(14, 13, 13, 0.2);
     border: transparent;
-    height: 60px;
+    height: 100px;
 }
 .footer .social{
     width: 25%;
     border-right: 2px solid #0a358b;
     padding: 20px;
+    margin-top: 5px;
 }
 .footer .social span a{
     text-decoration: none;
@@ -187,6 +189,7 @@ body{
 .footer .copyright{
     width: 75%;
     padding: 20px;
+    margin-top: 5px;
 }
 .footer .copyright span{
     margin-left: 10px;
@@ -210,14 +213,14 @@ body{
     border: none;
 }
 .card h4{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Jolly Lodger';
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     text-align: left;
 }
 .card p{
-    font-size: 14px;
-    font-family: arial;
+    font-size: 16px;
+    font-family:'Jolly Lodger';
 }
 .card:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
@@ -275,7 +278,7 @@ nav .breadcrumb .breadcrumb-item.active{
 
 /* kategori post */
 .category-post{
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Jolly Lodger';
 }
 .category-post h2{
     font-weight: 400px;
@@ -311,10 +314,8 @@ nav .breadcrumb .breadcrumb-item.active{
     margin-left: 60px;
 }
 
-
-
  /* toggle bar */
- .navbar .toggle-bar{
+ .toggle-bar{
    display: none;
    width: 40%;
     height: 36px;
@@ -322,6 +323,7 @@ nav .breadcrumb .breadcrumb-item.active{
     top: 4%;
     bottom: 0;
     position: absolute;
+    cursor: pointer;
 }
 .toggle-bar span{
     width: 40px;
@@ -370,18 +372,27 @@ nav .breadcrumb .breadcrumb-item.active{
     justify-content: center;
 }
 /* back-to-top */
-.back-to-top{
+.backTotop{
     width: 38px;
     height:32px;
-    position:absolute;
-    left: 1080px;
-    top:1600px;
+    position:sticky;
+    top: 20px;
+    bottom: 20px;
+    left: 1000px;
+    margin-right: 10px;
+    aspect-ratio: 1;
     align-items: center;
     justify-content: center;
     border:2px solid #066abc;
     border-radius: 50%;
-    cursor: pointer;
     background: rgb(36, 231, 36);
+    cursor: pointer;
+}
+.backTotop::before{
+    content: "";
+    position: absolute;
+    inset: 30%;
+    transform: translateY(20%) rotate(-45deg);
 }
 /* For Desktop */
 .col-1 {width:8.33%;}
@@ -424,7 +435,7 @@ nav .breadcrumb .breadcrumb-item.active{
         height: 30px;
         width: 120px;
     }
-    .navbar .toggle-bar{
+    .toggle-bar{
         position:absolute;
         flex: 1;
         margin-top: 6px;
@@ -468,11 +479,10 @@ nav .breadcrumb .breadcrumb-item.active{
         background-size:contain;
         background-repeat: no-repeat;
     }
-    .back-to-top{
-        position:absolute;
+    .backTotop{
         left: 350px;
-        /* top:540px; */
     }
+    
     .form-label{
         width: 100px;
     }

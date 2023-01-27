@@ -1,14 +1,27 @@
+let backTotop = document.getElementById('back-to-top');
+function toggleMenu(){
+    let menu = document.getElementById('menu');
+    if(menu.style.display == 'block'){
+        menu.style.display = 'none';
+    }else{
+        menu.style.display = 'block';
+    }
+    
+}
 function show(){
-    // console.log('hello show...')
-    if(window.pageYOffset >= 1604){
-        console.log('muncul...');
-    } else if(window.pageYOffset <= 1604){
-        console.log('hidden...')
+   
+    if(window.pageYOffset >= 400){
+        backTotop.classList.add('backTotop');
+        backTotop.style.display='block';
+        // console.log('muncul...');
+    } else if(window.pageYOffset < 400){
+        backTotop.style.display='none';
+        // console.log('hidden...');
     }
 }
 window.addEventListener('scroll',show);
 
-let backTotop = document.getElementById('back-to-top');
 backTotop.addEventListener('click',function(){
-    console.log('hello world...')
+    document.body.scrollTop = 0;//for safari
+    document.documentElement.scrollTop = 0;//for chrome, firefox, ie and opera
 })
