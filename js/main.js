@@ -1,6 +1,7 @@
 let backTotop = document.getElementById('back-to-top');
+let menu = document.getElementById('menu');
+
 function toggleMenu(){
-    let menu = document.getElementById('menu');
     if(menu.style.display === 'block'){
         menu.style.display = 'none';
     }else{
@@ -24,4 +25,13 @@ window.addEventListener('scroll',show);
 backTotop.addEventListener('click',function(){
     document.body.scrollTop = 0;//for safari
     document.documentElement.scrollTop = 0;//for chrome, firefox, ie and opera
-})
+});
+
+function link(){
+    if(menu.style.display === 'block'){
+        menu.style.display = 'none';
+    }else{
+        menu.style.display = 'block';
+    }
+}
+
